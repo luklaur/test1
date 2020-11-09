@@ -10,7 +10,8 @@ public class Lesson2 {
 //        exercise1();
 //        exercise2(5);
 //        exercise3(3, 3);
-        fibonacci(6);
+//        fibonacci(200);
+        exercise5();
     }
 
 
@@ -50,7 +51,7 @@ public class Lesson2 {
 
 //         see on copy paste + muudatused
         for (int i = 1; i <= n * 2; i++) {
-            //if number%2 == 0 it means its an even number (hea meelespea endale)
+            //if number%2 == 0 it means its an even number
             if (i % 2 == 0) {
                 System.out.println(i + " ");
 
@@ -90,28 +91,158 @@ public class Lesson2 {
         // 0, 1, 1, 2, 3, 5, 8, 13, 21
         // Tagasta fibonacci jada n element
 
-//        a b c d e f g h
-        int a = 0, b = 1;
-        int c = a + b;
-        a = b + c;
-        b = c + a;
-        c = a + b;
-        a = b + c;
-        b = c + a;
-        System.out.println(b);
-        return b;
+        //       teha for loopiga sama asi - vihje: esimesed 2 numbrid if else'ga ära händlida, sellest ei pääse
 
+//        c = a + b;
+//        a = b;
+//        b = c;
 
-//        ainult a b ja c, teha sama asi
-
-
+// prindin välja 50 fibo kohta
+//        int a = 0, b = 1; // ÜHES REAS EI OLE ILUS
+        int a = 0;
+        int b = 1;
+//        int c; // c ei ole vaja siin defineerida, see tuleb valemist
+        for (int i = 0; i <= n; i++) {  // alustab nullist, laseb 50ni, liidab iga kord +1 NB! i++ VS i = i++
+            System.out.println(a + " ");
+            int c = a + b;
+            a = b;
+            b = c;
+        }
+        return b; // see funktsioon laseb nüüd lõpmatuseni fibo välja
     }
+
+
+////        a b c d e f g h
+//        int a = 0, b = 1;
+//        int c = a + b;
+//        a = b + c;
+//        b = c + a;
+//        c = a + b;
+//        a = b + c;
+//        b = c + a;
+//        System.out.println(b);
+//        return b;
+
+
+//        koguaeg c = a + b, teha nii, et muutuja oleks koguaeg ühe võrra nihkes
+
+//        int a = 0, b = 1;
+//
+//        int c = a + b;
+//        a = b;
+//        b = c;
+//
+//        c = a + b;
+//        a = b;
+//        b = c;
+//
+//        c = a + b;
+//        a = b;
+//        b = c;
+//
+//        c = a + b;
+//        a = b;
+//        b = c;
+//
+//        c = a + b;
+//        a = b;
+//        b = c;
+//
+//        c = a + b;
+//        a = b;
+//        b = c;
+//
+//        c = a + b;
+//        a = b;
+//        b = c;
+//
+//        c = a + b;
+//        a = b;
+//        b = c;
+//
+//        c = a + b;
+//        a = b;
+//        b = c;
+//
+//        c = a + b;
+//        a = b;
+//        b = c;
+//
+//        c = a + b;
+//        System.out.println(c);
+//        return c;
+
+
+//        teha sama asi, aga ainult c = a + b
+
+//        int eelviimane = 0, viimane = 1;
+//
+//        int c = eelviimane + viimane; // 1
+//        eelviimane = viimane;
+//        c = eelviimane + viimane; // 2
+//        viimane = c;
+//        c = eelviimane + viimane; // 3
+//        eelviimane = c;
+//        c = eelviimane + viimane; // 5
+//        viimane = c;
+//        c = eelviimane + viimane; // 8
+//        eelviimane = c;
+//        c = eelviimane + viimane; // 11
+//        System.out.println(c);
+//        return c;
+//
+
+//        viimase sisu uus väärtus
+
+//        int eelviimane = 0, viimane = 1;
+//
+//        int c = eelviimane + viimane; // 1
+//        eelviimane = viimane;
+//        c = eelviimane + viimane; // 2
+//        viimane = eelviimane;
+//        c = eelviimane + viimane; // 3
+//        viimane = eelviimane;
+//        c = eelviimane + viimane; // 5
+//        viimane = eelviimane;
+//        c = eelviimane + viimane; // 8
+//        viimane = eelviimane;
+//        c = eelviimane + viimane; // 11
+//        System.out.println(c);
+//        return c;
+
 
     public static void exercise5() {
         // https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=36
-    }
+//        Consider the following algorithm:
+//        1. input n
+//        2. print n
+//        3. if n = 1 then STOP
+//        4. if n is odd then n ←− 3n + 1
+//        5. else n ←− n/2
+//        6. GOTO 2
+//        Given the input 22, the following sequence of numbers will be printed
+//        22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1
 
-    public static void exercise6() {
+//        Scanner scan = new Scanner(System.in);
+//        System.out.println("Kirjuta mingi number");
+//         int n = scan.nextInt();
+//         System.out.println(n);
+//
+//         if(n = 1){
+//             break;
+//         }
+//         else if(n % 2 == 1) {
+//
+//         }
+//
+//
+//
+//
+//
+//    }
+
+
+//    public static void exercise6() {
         /*
             Kirjutada Java programm, mis loeb failist visits.txt sisse looduspargi külastajad erinevatel jaanuari päevadel ning
             a) sorteerib külastuspäevad külastajate arvu järgi kasvavalt ning prindib tulemuse konsoolile;
@@ -120,17 +251,17 @@ public class Lesson2 {
          */
     }
 
-    public static void exercise7() {
-        // TODO arvuta kasutades BigDecimali 1.89 * ((394486820340 / 15 ) - 4 )
-        BigDecimal a = new BigDecimal("1.89");
-        BigDecimal b = new BigDecimal("394486820345");
-        BigDecimal c = new BigDecimal("15");
-        BigDecimal d = new BigDecimal("4");
+//    public static void exercise7() {
+//        // TODO arvuta kasutades BigDecimali 1.89 * ((394486820340 / 15 ) - 4 )
+//        BigDecimal a = new BigDecimal("1.89");
+//        BigDecimal b = new BigDecimal("394486820345");
+//        BigDecimal c = new BigDecimal("15");
+//        BigDecimal d = new BigDecimal("4");
+//
+//        System.out.println(b.divide(c, 4, RoundingMode.HALF_UP));
+//    }
 
-        System.out.println(b.divide(c, 4, RoundingMode.HALF_UP));
-    }
-
-    public static void exercise8() {
+//    public static void exercise8() {
         /*
         Failis nums.txt on üksteise all 150 60-kohalist numbrit.
 
@@ -140,7 +271,7 @@ public class Lesson2 {
         VASTUS:
         Õige summa: 77378062799264987173249634924670947389130820063105651135266574
          */
-    }
+//    }
 
     public static void exercise9() {
         /* TODO
