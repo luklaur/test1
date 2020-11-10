@@ -229,7 +229,7 @@ public class Lesson2 {
 
 
 
-        for (int i = n; i <= n; i = i - 1) {
+        while(n > 1){
 
             if (n % 2 == 1) {
                 n = (3 * n) + 1;
