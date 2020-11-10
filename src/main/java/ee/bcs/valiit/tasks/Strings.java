@@ -1,23 +1,23 @@
 package ee.bcs.valiit.tasks;
 
 // kirjuta funktsioon, mis võtab sisse String i ja tagastab Stringi, kus on eemaldatud iga teine täht
-,
-
-public class Strings {
-    public static void main(String[] args) {
-        String x = "abcdef"
-
-        for (String int i :x){
-        }
-        for (int i = 0; i < x.charAt(1); i++) {
-            if (i % 2 == 0) {
-                System.out.println(x.getBytes(i));
-            }
-        }
-
-    }
-
-}
+//,
+//
+//public class Strings {
+//    public static void main(String[] args) {
+//        String x = "abcdef"
+//
+//        for (String int i :x){
+//        }
+//        for (int i = 0; i < x.charAt(1); i++) {
+//            if (i % 2 == 0) {
+//                System.out.println(x.getBytes(i));
+//            }
+//        }
+//
+//    }
+//
+//}
 
 
 // asjad mida teada

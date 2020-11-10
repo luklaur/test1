@@ -1,7 +1,5 @@
 package ee.bcs.valiit.tasks;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class Lesson2 {
@@ -11,7 +9,7 @@ public class Lesson2 {
 //        exercise2(5);
 //        exercise3(3, 3);
 //        fibonacci(200);
-        exercise5();
+        exercise5(22);
     }
 
 
@@ -211,7 +209,7 @@ public class Lesson2 {
 //        return c;
 
 
-    public static void exercise5() {
+    public static void exercise5(int n) {
         // https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=36
 //        Consider the following algorithm:
 //        1. input n
@@ -223,25 +221,24 @@ public class Lesson2 {
 //        Given the input 22, the following sequence of numbers will be printed
 //        22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1
 
-//        Scanner scan = new Scanner(System.in);
-//        System.out.println("Kirjuta mingi number");
-//         int n = scan.nextInt();
-//         System.out.println(n);
-//
-//         if(n = 1){
-//             break;
-//         }
-//         else if(n % 2 == 1) {
-//
-//         }
-//
-//
-//
-//
-//
-//    }
+//        Start with an
+//        integer n. If n is even, divide by 2. If n is odd, multiply by 3 and add 1. Repeat this
+//        process with the new value of n, terminating when n = 1. For example, the following
+//        sequence of numbers will be generated for n = 22:
+//        22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1
 
 
+
+        for (int i = n; i <= n; i = i - 1) {
+
+            if (n % 2 == 1) {
+                n = (3 * n) + 1;
+            } else {
+                n = n / 2;
+            }
+            System.out.println(n);
+        }
+    }
 //    public static void exercise6() {
         /*
             Kirjutada Java programm, mis loeb failist visits.txt sisse looduspargi külastajad erinevatel jaanuari päevadel ning
@@ -249,7 +246,6 @@ public class Lesson2 {
             b) prindib konsoolile päeva, mil külastajaid oli kõige rohkem.
             Faili asukoht tuleb programmile ette anda käsurea parameetrina.
          */
-    }
 
 //    public static void exercise7() {
 //        // TODO arvuta kasutades BigDecimali 1.89 * ((394486820340 / 15 ) - 4 )
