@@ -9,7 +9,7 @@ public class Lesson1 {
         excersie4();
     }
 
-    public static void excersie1(){
+    public static void excersie1() {
         // TODO
         // defineeri 3 muutujat a = 1, b = 1, c = 3
         // Prindi välja a==b ja a==c
@@ -19,15 +19,15 @@ public class Lesson1 {
         int a = 1;
         int b = 1;
         int c = 3;
-        System.out.println(a==b);
-        System.out.println(a==c);
+        System.out.println(a == b);
+        System.out.println(a == c);
         a = c;
-        System.out.println(a==b);
-        System.out.println(a==c);
+        System.out.println(a == b);
+        System.out.println(a == c);
 
     }
 
-    public static void excersie2(){
+    public static void excersie2() {
         // TODO
         // Loo muutujad x1 = 10 ja x2 = 20, vali sobiv andmetüüp
         // Tekita muutuja y1 = ++x1, trüki välja nii x1 kui y1
@@ -44,7 +44,7 @@ public class Lesson1 {
         System.out.println(y2);
     }
 
-    public static void excersie3(){
+    public static void excersie3() {
         // TODO
         // Loo arvulised muutujad
         // a = 18 % 3
@@ -63,7 +63,7 @@ public class Lesson1 {
         System.out.println(d);
     }
 
-    public static void excersie4(){
+    public static void excersie4() {
         // TODO
         // Defineeri String tüüpi muutuja mille sisu oleks "\"\\""
         // Trüki muutuja sisu välja

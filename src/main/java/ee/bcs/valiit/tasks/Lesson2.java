@@ -8,8 +8,8 @@ public class Lesson2 {
 //        exercise1();
 //        exercise2(5);
 //        exercise3(3, 3);
-//        fibonacci(200);
-        exercise5(22);
+        fibonacci(10);
+//        exercise5(22);
     }
 
 
@@ -227,18 +227,18 @@ public class Lesson2 {
 //        sequence of numbers will be generated for n = 22:
 //        22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1
 
-
-
-        while(n > 1){
-
-            if (n % 2 == 1) {
-                n = (3 * n) + 1;
-            } else {
-                n = n / 2;
-            }
-            System.out.println(n);
-        }
-    }
+//
+//
+//        while(n > 1){
+//
+//            if (n % 2 == 1) {
+//                n = (3 * n) + 1;
+//            } else {
+//                n = n / 2;
+//            }
+//            System.out.println(n);
+//        }
+//    }
 //    public static void exercise6() {
         /*
             Kirjutada Java programm, mis loeb failist visits.txt sisse looduspargi külastajad erinevatel jaanuari päevadel ning
@@ -266,13 +266,13 @@ public class Lesson2 {
 
         VASTUS:
         Õige summa: 77378062799264987173249634924670947389130820063105651135266574
-         */
-//    }
-
-    public static void exercise9() {
-        /* TODO
-        Sama mis eelmises ülesandes aga ära kasuta BigInt ega BigDecimal klassi
-         */
+//         */
+////    }
+//
+//    public static void exercise9() {
+//        /* TODO
+//        Sama mis eelmises ülesandes aga ära kasuta BigInt ega BigDecimal klassi
+//         */
     }
 }
 
